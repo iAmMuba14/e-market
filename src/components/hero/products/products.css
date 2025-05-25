@@ -1,0 +1,205 @@
+:root {
+    --primaryColor: #FFFFFF;
+    --primaryColor1: #363738;
+    --secondaryColor: #F5F5F5;
+    --secondaryColor1: #FEFAF1;
+    --BG: #FFFFFF;
+    --Text: #FAFAFA;
+    --Text1: #7D8184;
+    --Text2: #000000;
+    --Button: #000000;
+    --Secondary2: #DB4444;
+    --Button1: #00FF66;
+    --Button2: #DB4444;
+    --HoverButton: #E07575;
+    --HoverButton2: #A0BCE0;
+    --gold: #FFAD33;
+  }
+
+  
+.products {
+    overflow: hidden;
+    
+    .mainContent {
+        flex-direction: column;
+        overflow: hidden;
+
+        .top {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+
+            .left {
+                display: flex;
+                flex: 1;
+                gap: 87px;
+                
+                .description {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    align-items: flex-start;
+
+                    .today {
+                        font-size: 16px;
+                        font-weight: 100;
+                        position: relative;
+                        display: flex;
+                        padding: 1rem 1.5rem;
+
+                        h6 {
+                            color: var(--Secondary2);
+                        }
+
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            height: 100%;
+                            left: 0;
+                            width: 20px;
+                            bottom: 0;
+                            border-radius: 4px;
+                            background: var(--Button2);
+                        }
+                    }
+                }
+            }
+
+            .right {
+                position: relative;
+                flex: 1;
+                display: flex;
+                align-items: flex-end;
+                padding: .5rem;
+
+                .buttons {
+                    /* border: 1px solid red; */
+                    display: flex;
+                    position: absolute;
+                    right: 0;
+                    gap: 1rem;
+
+                    .icon {
+                        font-size: 2rem;
+                        background-color: var(--secondaryColor);
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+
+        .cards {
+            width: 100%;
+            gap: 30px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .card {
+                width: 270px;
+                height: 350px;
+            }
+
+            .cardContent .cardImage {
+                position: relative;
+                width: 270px;
+                height: 250px;
+                background: var(--secondaryColor);
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+
+                .status {
+                    position: absolute;
+                    background: var(--Button1);
+                    width: 40px;
+                    border-radius: 3px;
+                    color: var(--Text);
+                    top: 10px;
+                }
+                
+                .image {
+                    width: 190px;
+                    height: 180px;
+                    /* border: 1px solid red; */
+                    position: relative;
+                    left: 15px;
+                    top: 10px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .reaction {
+                    position: absolute;
+                    right: 15px;
+                    top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    .icon {
+                        font-size: 25px;
+                        background-color: var(--primaryColor);
+                        color: var(--Button);
+                        border-radius: 50%;padding: .2rem;
+                    }
+                }
+            }
+
+            .cardContent .cardDesc {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: .5rem;
+
+                h5 {
+                    color: var(--Text2);
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: 15px;
+                    color: var(--Secondary2);
+
+                    del {
+                        color: var(--Text2);
+                        opacity: 50%;
+                    }
+                }
+
+                .rating {
+                    padding: .5rem 0;
+                    .star {
+                        font-size: 12px;
+                        color: var(--gold);
+                        
+                        span {
+                            margin-left: .4rem;
+                            color: var(--Text2);
+                            opacity: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .button {
+        padding: 3rem 0;
+
+        button {
+            padding: .5rem 2rem;
+            background: var(--Button2);
+            color: var(--Text);
+            font-size: 1rem;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+        }
+    }
+}

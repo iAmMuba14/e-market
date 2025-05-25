@@ -1,0 +1,134 @@
+:root {
+    --primaryColor: #FFFFFF;
+    --primaryColor1: #363738;
+    --secondaryColor: #F5F5F5;
+    --secondaryColor1: #FEFAF1;
+    --BG: #FFFFFF;
+    --Text: #FAFAFA;
+    --Text1: #7D8184;
+    --Text2: #000000;
+    --Button: #000000;
+    --Secondary2: #DB4444;
+    --Button1: #00FF66;
+    --Button2: #DB4444;
+    --HoverButton: #E07575;
+    --HoverButton2: #A0BCE0;
+    --gold: #FFAD33;
+  }
+
+.featured {
+  .top {
+    .title {
+      font-size: 16px;
+      font-weight: 100;
+      position: relative;
+      display: flex;
+      padding: 1rem 1.5rem;
+
+      h6 {
+        color: var(--Secondary2);
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        left: 0;
+        width: 20px;
+        bottom: 0;
+        border-radius: 4px;
+        background: var(--Button2);
+      }
+    }
+  }
+
+  .bottom {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    /* align-items: center; */
+    /* border: 1px solid red; */
+    overflow: hidden;
+  }
+  
+  .left, .right {
+    position: relative;
+    display: flex;
+    /* height: 100%; */
+    /* border: 1px solid red; */
+    flex: 1;
+  }
+  
+  .left {
+    background-color: #f0f0f0;  /* Or a custom bg */
+    /* padding: 20px; */
+    flex: 1;
+  }
+  
+  .right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .right-top {
+    display: flex;
+    /* justify-content: space-between; */
+    height: 284px;
+    align-items: center;
+    background-color: #f4f4f4;  /* Light background */
+    padding: 20px;
+    /* border: 1px solid red; */
+
+    img {
+        width: 250px;
+    }
+  }
+  
+  .right-top .description {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .right-bottom {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    gap: 1rem;
+  }
+  
+  .bottom-left, .bottom-right {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .bg {
+    background-color: var(--Button);  /* A generic background for items */
+    padding: 15px;
+  }
+  
+  .flexCenter {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flexColStart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .flexStart {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+}

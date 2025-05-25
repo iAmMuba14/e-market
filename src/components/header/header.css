@@ -1,0 +1,105 @@
+:root {
+    --primaryColor: #FFFFFF;
+    --primaryColor1: #363738;
+    --secondaryColor: #F5F5F5;
+    --secondaryColor1: #FEFAF1;
+    --BG: #FFFFFF;
+    --Text: #FAFAFA;
+    --Text1: #7D8184;
+    --Text2: #000000;
+    --Button: #000000;
+    --Secondary2: #DB4444;
+    --Button1: #00FF66;
+    --Button2: #DB4444;
+    --HoverButton: #E07575;
+    --HoverButton2: #A0BCE0;
+}
+
+.headerSection {
+    border-bottom: 1px solid var(--Button);
+}
+
+.topHead {
+    background: var(--Button);
+    color: var(--Text);
+    padding: .5rem;
+    justify-content: center;
+    position: relative;
+    
+    .headText {
+        align-items: center;
+        justify-content: center;
+        
+        span, a {
+            position: relative;
+            left: 1rem;
+            text-decoration: underline;
+            color: var(--Text);
+            font-size: 14;
+        }
+    }
+
+    .lang {
+        position: absolute;
+        right: 7rem;
+        gap: 1rem;
+    }
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 1rem;
+
+    .navbar {
+        width: 60%;
+        justify-content: space-between;
+
+        .menu li {
+            padding: .2rem 1rem;
+
+            a {
+                color: var(--Text2);
+            }
+        }
+    }
+
+    .nav-search {
+        /* width: 45%; */
+        gap: 2rem;
+        right: 0;
+
+        .icon {
+            width: 32px;
+            height: 32px;
+        }
+        
+        .search {
+            background-color: var(--secondaryColor);
+            color: var(--Text2);
+            padding: .5rem 1rem;
+            border-radius: .4rem;
+            gap: 1rem;
+
+            .icon {
+                width: 24px;
+                height: 24px;
+            }
+
+            input {
+                background: transparent;
+                border: none;
+                outline: none;
+
+                &::placeholder {
+                    opacity: 50%;
+                }
+            }
+        }
+
+        .prefIcons {
+            gap: 1rem;
+        } 
+    }
+}
