@@ -1,7 +1,9 @@
 import React from "react";
 import "./header.css";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import { CiHeart, CiSearch, CiShoppingCart } from "react-icons/ci";
+import { CiHeart, CiSearch } from "react-icons/ci";
+import { Link } from "react-router-dom";
+import { IoCartOutline } from "react-icons/io5";
 
 function Header() {
   return (
@@ -17,7 +19,7 @@ function Header() {
         </div>
 
         <div className="lang flex">
-          English <RiArrowDropDownLine className="icon" />
+          English <RiArrowDropDownLine className="icon" size={30} />
         </div>
       </div>
 
@@ -52,8 +54,10 @@ function Header() {
           </div>
 
           <div className="prefIcons flex">
-            <CiHeart className="icon" />
-            <CiShoppingCart className="icon" />
+            <Link to="/wishListPage">
+              <CiHeart className="icon" />
+            </Link>
+            <IoCartOutline className="icon" />
           </div>
         </div>
       </nav>

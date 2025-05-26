@@ -7,7 +7,7 @@ import Footer from '../../components/footer/Footer'
 function HomePage() {
   return (
     <div> 
-      <Header />
+      {/* <Header /> */}
       <Hero />
       {/* <Footer /> */}
     </div>

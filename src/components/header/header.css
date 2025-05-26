@@ -29,6 +29,10 @@
     .headText {
         align-items: center;
         justify-content: center;
+
+        p {
+            color: var(--Text1);
+        }
         
         span, a {
             position: relative;

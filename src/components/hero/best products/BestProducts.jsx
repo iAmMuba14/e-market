@@ -6,7 +6,7 @@ import { IoEyeOutline } from 'react-icons/io5';
 
 import jacket from '../../../assets/Frame 605.png'
 import bag from '../../../assets/Frame 606.png'
-import Keyboard from '../../../assets/Frame 610.png'
+import AirCooler from '../../../assets/Frame 610.png'
 import shelf from '../../../assets/Frame 615.png'
 
 function BestProducts() {
@@ -36,7 +36,7 @@ function BestProducts() {
         <div className="cards">
             <Card image={jacket} desc={"The north coat"} price={260} canPrice={360} reviews={65} />
             <Card image={bag} desc={"Gucci duffle bag"} price={960} canPrice={1160} reviews={65} />
-            <Card image={Keyboard} desc={"RGB liquid CPU Cooler"} price={160} canPrice={170} reviews={99} />
+            <Card image={AirCooler} desc={"RGB liquid CPU Cooler"} price={160} canPrice={170} reviews={99} />
             <Card image={shelf} desc={"Small BookShelf"} price={360} reviews={49} />
         </div>
         
