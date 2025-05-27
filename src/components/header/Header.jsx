@@ -57,7 +57,10 @@ function Header() {
             <Link to="/wishListPage">
               <CiHeart className="icon" />
             </Link>
-            <IoCartOutline className="icon" />
+            <Link to="/cartPage">
+              <IoCartOutline className="icon" />
+            </Link>
+            
           </div>
         </div>
       </nav>
