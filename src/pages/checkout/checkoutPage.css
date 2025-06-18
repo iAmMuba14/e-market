@@ -18,13 +18,16 @@
 .checkout {
     display: flex;
     flex-direction: column;
-
+    
     .menu-bar {
-        display: block;
+        display: flex;
+        margin: 0;
+        padding-left: 0;
         
         .menu {
             display: flex;
         }
+        
         a {
             text-decoration: none;
             color: var(--Text2);
@@ -33,7 +36,193 @@
 
             .menu-item {
                 margin-right: .5rem;
+                color: var(--Text1);
+            }
+
+            .menu-item:last-child {
+                color: var(--Text2);
+                font-weight: 500;
+            }
+        }
+    }
+
+    .checkout-content {
+        display: flex;
+        flex-direction: column;
+
+        .checkout-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            background-color: var(--primaryColor);
+            
+            h2 {
+                font-size: 27px;
+                font-weight: 500;
+            }
+        }
+
+        .billing-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 7rem;
+            
+
+            .input-group {
+                display: flex;
+                flex-direction: column;
+                margin-right: 1rem;
+
+                .input {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
+                    margin-bottom: 1rem;
+
+                    label {
+                        margin-bottom: .5rem;
+                        color: var(--Text2);
+                        opacity: 50%;
+                    }
+
+                    input {
+                        width: 100%;
+                        padding: .5rem;
+                        border: none;
+                        outline: none;
+                        background-color: var(--secondaryColor);
+                        border-radius: .2rem;
+                        color: var(--Text2);
+                        text-align: start;
+                    }
+                }
+                .checkbox-group {
+                    display: flex;
+                    gap: .5rem;
+                    align-items: center;
+                }
+
+                input[type="checkbox"]:checked {
+                    accent-color: var(--Secondary2);
+                }
+                
+            }
+            
+            .order-summary {
+                display: flex;
+                flex-direction: column;
+                width: 95%;
+                margin: 0 auto;
+                padding: 1rem;
+                width: 70%;
+                
+                .order-items {
+                    display: flex;
+                    flex-direction: column;
+
+                    .order-item {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: .5rem;
+                        padding: .5rem 0;
+                        align-items: center;
+                        
+
+                        .product-desc {
+                            display: flex;
+                            align-items: center;
+
+                            .image {
+                                width: 50px;
+                                height: 50px;
+                                margin-right: .5rem;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .order-summary-detail {
+                    display: flex;
+                    flex-direction: column;
+
+                    .status {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 1rem 0;
+                    }
+
+                    .shipping {
+                        border-top: 1px solid var(--Text1);
+                        border-bottom: 1px solid var(--Text1);
+                    }
+                }
+
+                .payment-methods {
+                    display: flex;
+                    flex-direction: column;
+
+                    .payment-method {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .bank, .credit-cards, .cash-on-delivery {
+                            display: flex;
+                            align-items: center;
+                            gap: .5rem;
+                        }
+
+                        label {
+                            display: block;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .coupon-group {
+                    display: flex;
+                    gap: .5rem;
+                    margin-top: 1.5rem;
+
+                    input[type="text"] {
+                        flex: 1;
+                        padding: .75rem;
+                        border: 1px solid var(--Button);
+                        border-radius: .2rem;
+                        text-align: start;
+                    }
+
+                    .apply-coupon {
+                        background-color: var(--Secondary2);
+                        color: var(--Text);
+                        padding: .75rem 1rem;
+                        border: none;
+                        border-radius: .2rem;
+                        cursor: pointer;
+                    }
+                }
+
+                .place-order {
+                    margin-top: 1.5rem;
+                    width: 100%;
+                    background-color: var(--Button2);
+                    color: var(--Text);
+                    padding: .75rem;
+                    border: none;
+                    border-radius: .2rem;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
             }
         }
     }
 }
+

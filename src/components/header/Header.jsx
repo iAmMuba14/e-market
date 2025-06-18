@@ -35,10 +35,10 @@ function Header() {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="">Contact</a>
+                <a href="/contacts">Contact</a>
               </li>
               <li>
-                <a href="">About</a>
+                <a href="/about">About</a>
               </li>
               <li>
                 <a href="/signpage">Sign Up</a>

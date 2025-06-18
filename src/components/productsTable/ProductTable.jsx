@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './productTable.css'; // Add styles here or inline
+
+import image1 from '../../assets/Frame 613.png'
+import image2 from '../../assets/Frame 611.png'
 
 const productsData = [
   {
     id: 1,
-    image: '../../assets/Frame 611.png', // Replace with actual image paths or URLs
+    image: image1, // Replace with actual image paths or URLs
     name: 'H1 Gamepad',
     price: 550,
   },
   {
     id: 2,
-    image: '../assets/Frame 613.png', // Replace with actual image paths or URLs    
+    image: image2, // Replace with actual image paths or URLs    
     name: 'LCD Monitor',
     price: 650,
   },

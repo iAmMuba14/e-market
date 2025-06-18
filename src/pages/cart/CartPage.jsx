@@ -26,9 +26,7 @@ const CartPage = () => {
         <div className="cart-summary">
           <div className="coupon-container">
            <div className="coupon">
-             <div className="coupon-code">
-              <input type="text" placeholder='Coupon Code' />
-            </div>
+            <input type="text" placeholder='Coupon Code' className='coupon-code'/>
             <div className="apply-coupon">
               <span>Apply Coupon</span>
             </div>
@@ -45,7 +43,7 @@ const CartPage = () => {
               </div>
               <div className="item shipping">
                 <span>Shipping:</span>
-                <span>Free Shipping</span>
+                <span>Free</span>
               </div>
               <div className="item">
                 <span>Total:</span>

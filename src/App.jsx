@@ -10,6 +10,10 @@ import LoginPage from './pages/loginpage/LoginPage'
 import WishListPage from './pages/wishList/WishListPage'
 import CartPage from './pages/cart/CartPage'
 import CheckoutPage from './pages/checkout/CheckoutPage'
+import Account from './pages/account/Account'
+import About from './pages/about/About'
+import Contact from './pages/contact/Contact'
+import ProductDetailsPage from './pages/productDetailsPage/ProductDetailsPage'
 
 function App() {
   return (
@@ -23,6 +27,10 @@ function App() {
           <Route path='/wishListPage' element={<WishListPage />} />
           <Route path='/cartPage' element={<CartPage />} />
           <Route path='/checkoutPage' element={<CheckoutPage />} />
+          <Route path='/account' element={<Account />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contacts' element={<Contact />} />
+          <Route path='/details' element={<ProductDetailsPage />} />
         </Routes>
         <Footer />
       </Router>

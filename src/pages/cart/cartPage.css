@@ -58,15 +58,13 @@
 
             .coupon-code {
                 border: 2px solid var(--Text1);
-                padding: 0.5rem 1rem;
+                padding: 0.5rem;
                 border-radius: .2rem;
+                background: transparent;
+                width: 15rem;
+                text-align: left;
+                outline: none;
                 
-                input {
-                    background: transparent;
-                    border: none;
-                    width: 15rem;
-                    text-align: start;
-                }
             }
 
             .apply-coupon {
@@ -75,6 +73,7 @@
                 border: 2px solid var(--Button2);
                 color: var(--Text);
                 border-radius: .2rem;
+                cursor: pointer;
             } 
         }
 
@@ -106,12 +105,13 @@
             }
 
             .checkout {
-                width:60%;
+                width:70%;
                 margin: 0 auto;
                 background-color: var(--Button2);
                 color: var(--Text);
                 padding: .5rem 1rem;
                 border-radius: .2rem;
+                border: none;
                 
             }
         }

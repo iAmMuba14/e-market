@@ -45,16 +45,16 @@
 
     .lang {
         position: absolute;
-        right: 7rem;
+        right: 12rem;
         gap: 1rem;
     }
 }
 
 nav {
-    width: 90%;
+    width: 80%;
     margin: auto;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 2rem;
 
     .navbar {
         width: 60%;
@@ -89,6 +89,7 @@ nav {
             .icon {
                 width: 24px;
                 height: 24px;
+                color: var(--Text2);
             }
 
             input {
@@ -104,6 +105,12 @@ nav {
 
         .prefIcons {
             gap: 1rem;
+
+            icon {
+                width: 32px;
+                height: 32px;
+                color: var(--Text2);
+            }
         } 
     }
 }

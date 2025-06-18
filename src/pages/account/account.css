@@ -1,0 +1,178 @@
+:root {
+    --primaryColor: #FFFFFF;
+    --primaryColor1: #363738;
+    --secondaryColor: #F5F5F5;
+    --secondaryColor1: #FEFAF1;
+    --BG: #FFFFFF;
+    --Text: #FAFAFA;
+    --Text1: #7D8184;
+    --Text2: #000000;
+    --Button: #000000;
+    --Secondary2: #DB4444;
+    --Button1: #00FF66;
+    --Button2: #DB4444;
+    --HoverButton: #E07575;
+    --HoverButton2: #A0BCE0;
+}
+
+.account {
+    height: calc(100vh - 114px);
+    margin-bottom: 0;
+}
+
+.accountContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.topBar .left span:nth-child(1) {
+    color: var(--Text2);
+    opacity: 50%;
+    font-weight: 500;
+}
+.topBar .left span:nth-child(2) {
+    color: var(--Text2);
+    font-weight: 600;
+}
+.topBar .right {
+    color: var(--Text2);
+    font-weight: 600;
+}
+.topBar .right span {
+    color: var(--Secondary2);
+    font-weight: 500;
+}
+
+.accountBody {
+    display: flex;
+    gap: 20px;
+}
+
+.accountMenu {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+.accountMenu h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.accountMenu span {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.accountMenuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.accountMenuItemOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    margin: 1rem 0 1rem 3rem;
+}
+.accountMenuItemOptions > span {
+    color: var(--Text2);
+    opacity: 50%;
+}
+.accountMenuItemOptions .active {
+    color: var(--Secondary2);
+    opacity: 1;
+}
+
+.accountProfile {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    padding: 3rem 1rem 1rem;
+    margin-right: 4rem;
+}
+.accountProfile h2 {
+    color: var(--Secondary2);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.accountProfile  label {
+    color: var(--Text2);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profileInputs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 0.7rem;
+}
+.profileInput, .profilePasswordField {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex: 1;
+}
+
+.accountProfile input {
+    text-align: start;
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--secondaryColor);
+    color: var(--Text2);
+
+    &::placeholder {
+        color: var(--Text1);
+        font-weight: 500;
+    }
+}
+
+
+.profilePasswordField {
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.buttons {
+    margin-top: 1rem;
+    align-self: flex-end;
+    gap: 10px;
+    display: flex;
+    margin-bottom: 0.7rem;
+    align-items: center;
+}
+
+.buttons > button:nth-child(1) {
+    padding: .5rem;
+    background: transparent;
+    color: var(--Text2);
+    border: none;
+}
+.buttons > button:nth-child(2) {
+    padding: .5rem 2rem;
+    background-color: var(--Button2);
+    color: var(--Text);
+    border: none;
+    border-radius: .2rem;
+}
